@@ -251,3 +251,44 @@
   font-size: 18px;
   list-style-type: none;
 }
+
+.cv {
+    font-family: Verdana, sans-serif;
+    // list-style-type: none;
+
+    h1 {
+      font-size: 32px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 24px;
+      text-align: left;
+      color: #686868;
+    }
+
+    h3 {
+      font-size: 20px;
+      text-align: left;
+      font-style: italic;
+      margin-left: 2em;
+    }
+
+    p {
+      font-size: 16px;
+      font-style:normal;
+    }
+
+
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
