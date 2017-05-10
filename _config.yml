@@ -4,8 +4,8 @@ email: james.smith9113@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   I am a Ph.D. candidate at the University of Colorado, Boulder in Prof. Sandeep Sharma's group. My research focuses on developing accurate and fast methods to calculate the electronic structure properties of species that require a multiconfigurational approach. These systems range from diatomics to biologically relevant molecules like iron(II) porphyrin.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://jasm32851.github.io" # the base hostname & protocol for your site
-github_username:  jasm32851
+url: "http://jamesETsmith.github.io" # the base hostname & protocol for your site
+github_username:  jamesETsmith
 bitbucket_username: James_E_T_Smith
 
 # Build settings
