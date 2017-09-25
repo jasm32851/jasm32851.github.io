@@ -13,8 +13,8 @@ Python:
 - [Getting Started with Python](https://opentechschool.github.io/python-beginners/en/getting_started.html)
 
 Gaussian Processes:
--[Gaussian Process for Dummies](http://katbailey.github.io/post/gaussian-processes-for-dummies/)
--[Gaussian Process Tutorial](http://keyonvafa.com/gp-tutorial/)
+- [Gaussian Process for Dummies](http://katbailey.github.io/post/gaussian-processes-for-dummies/)
+- [Gaussian Process Tutorial](http://keyonvafa.com/gp-tutorial/)
 
 Machine Learning:
--[Hands on Machine Learning with TensorFlow and Scikit-Learn](https://github.com/ageron/handson-ml)
+- [Hands on Machine Learning with TensorFlow and Scikit-Learn](https://github.com/ageron/handson-ml)
