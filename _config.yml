@@ -7,9 +7,13 @@ baseurl: "" # the subpath of your site, e.g. /blog
 
 url: "http://jamesetsmith.github.io" # the base hostname & protocol for your site
 github_username:  jamesETsmith
+# twitter_username: blalalal
 bitbucket_username: James_E_T_Smith
 linkedin_username: james-smith-8525792b
 researchgate_username: James_Smith158
+orcid_username: 0000-0002-5130-8633
+gscholar_username: James_E_T_Smith
+
 
 
 
