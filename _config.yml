@@ -1,8 +1,9 @@
 # Site settings
-title:
-email: james.smith9113@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  I am a Ph.D. candidate at the University of Colorado, Boulder in Prof. Sandeep Sharma's group. My research focuses on developing fast and accurate methods to calculate the electronic structure properties of challenging chemical species.
+title: James E T Smith
+email: james.e.smith@colorado.edu
+email2: james.smith9113@gmail.com
+description: > # this means to ignore newlines until "baseurl:
+  Connecting chemistry, physics, and computer science.
 baseurl: "" # the subpath of your site, e.g. /blog
 
 url: "http://jamesetsmith.github.io" # the base hostname & protocol for your site
