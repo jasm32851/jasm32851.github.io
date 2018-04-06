@@ -1,151 +1,120 @@
 ---
-layout: default
+layout: null
 title: Home
+sitemap:
+    priority: 1.0
+    lastmod: 2017-11-02
+    changefreq: weekly
 ---
-
-<h1>
-James E T Smith
-</h1>
-
-<p>
-  I'm a Ph.D. candidate in Chemical Physics in <a href="https://www.colorado.edu/lab/sharmagroup/">Sandeep Sharma's group</a> at the <a href="https://www.colorado.edu/">University of Colorado, Boulder</a>. My research focuses on the intersection of chemistry, physics, and computer science, specifically I develop new methods and algorithms to calculate the properties of complex molecules. If you're interested in collaborating of if you have any questions, feel free to shoot me an email!
-</p>
-
+<!DOCTYPE HTML>
 <!--
-<div class="cv">
-  <hr>
-  <h1>
-    Professional Experience
-    <hr>
-
-    <h2>
-      Sharma Research Group
-      <h3>
-        Research Assistant/Doctoral Candidate (Fall 2016 - Present)
-        <p>
-          Our group is interested in developing fast and accurate methods to compute the electronic structure of highly multireference molecules. I'm currently working on the <a href="http://pubs.acs.org/doi/abs/10.1021/acs.jctc.6b01028">Semistochastic Heatbath Configuration Interaction</a> (SHCI) project to connect this algorithm with the <a href="https://github.com/sunqm/pyscf">PySCF</a> Quantum Chemistry package. Our group has implemented the SHCI algorithm in the <a href = "https://sanshar.github.io/Dice/">Dice</a> package and in the future, I hope to use Dice/PySCF to build potential energy surfaces and use these to study the surface hopping dynamics of metal centers found in biological molecules.
-        </p>
-      </h3>
-    </h2>
-
-    <h2>
-      Science Buffs
-      <h3>
-        Staff Writer (Summer 2017 - Present)
-        <p>
-          Work with several other graduate students at <a href="https://sciencebuffs.org/">Science Buffs</a> to promote graduate STEM research at CU Boulder. Our publications aim to educate out-of-field and lay people about the most current work at the university from a graduate student perspective.
-        </p>
-      </h3>
-    </h2>
-
-    <h2>
-      Weber Research Group
-      <h3>
-        Research Assistant (Fall 2014 - Fall 2016)
-        <p>
-          Studied the effect of solvation on water oxidation catalysts and inorganic metal complexes using UV and Visible laser spectroscopies. During my time in the group, I modified the existing reflectron time-of-flight mass spectrometer to allow the use of infrared as well as UV/Visible light to study these ionic species.
-        </p>
-      </h3>
-    </h2>
-
-    <h2>
-      Chemistry Department, University of Colorado, Boulder
-      <h3>
-        Head Teaching Assistant (Spring 2016)
-        <p>
-          In addition to teaching General Chemistry 2 laboratories and small group activities, I worked closely with the instructors of the course to prepare the laboratory experiments and materials. Every week I led meetings where I introduced the material for the coming week to my fellow teaching assistants (TAs) and helped younger TAs improve their teaching abilities.
-        </p>
-      </h3>
-    </h2>
-
-    <h2>
-      Chemistry Department, University of Colorado, Boulder
-      <h3>
-        Teaching Assistant (Fall 2014 - Fall 2015)
-        <p>
-          I taught General Chemistry laboratory and small group activities for 80 students a semester. During this time, I met with other TAs and the laboratory instructor regularly to discuss and improve the pedagogy of the course.
-        </p>
-      </h3>
-    </h2>
-
-  </h1>
-
-  <hr>
-
-  <h1>
-    Education
-    <hr>
-    <h2>
-      <a href="http://www.colorado.edu/chembio/">University of Colorado</a>, Boulder, Colorado
-      <h3>
-        Ph.D. Candidate in Chemical Physics (Fall 2014-Present)
-      </h3>
-    </h2>
-    <h2>
-      <a href="http://www.davidson.edu/">Davidson College</a>, Davidson, North Carolina
-      <h3>
-        B.S.: Chemistry (Cum Laude)
-      </h3>
-    </h2>
-  </h1>
-
-  <hr>
-
-  <h1>
-    Awards and Fellowships
-    <hr>
-      <h3>
-        GAANN Fellow (2016-2018)
-      </h3>
-      <h3>
-        Graduate Teaching Excellence Award (2015-2016 academic year)
-      </h3>
-      <h3>
-        Graduate Student General Chemistry Teaching Award (2014-2015 academic year)
-      </h3>
-  </h1>
-</div> -->
-  <!-- <h1 class="page-heading">James E T. Smith</h1> -->
-<!--
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-  -->
-
-<!--
-Thanks for vising my website, have a great day!!
-
-░░░░░░░░░▄░░░░░░░░░░░░░░▄░░░░
-░░░░░░░░▌▒█░░░░░░░░░░░▄▀▒▌░░░
-░░░░░░░░▌▒▒█░░░░░░░░▄▀▒▒▒▐░░░
-░░░░░░░▐▄▀▒▒▀▀▀▀▄▄▄▀▒▒▒▒▒▐░░░
-░░░░░▄▄▀▒░▒▒▒▒▒▒▒▒▒█▒▒▄█▒▐░░░
-░░░▄▀▒▒▒░░░▒▒▒░░░▒▒▒▀██▀▒▌░░░
-░░▐▒▒▒▄▄▒▒▒▒░░░▒▒▒▒▒▒▒▀▄▒▒▌░░
-░░▌░░▌█▀▒▒▒▒▒▄▀█▄▒▒▒▒▒▒▒█▒▐░░
-░▐░░░▒▒▒▒▒▒▒▒▌██▀▒▒░░░▒▒▒▀▄▌░
-░▌░▒▄██▄▒▒▒▒▒▒▒▒▒░░░░░░▒▒▒▒▌░
-▀▒▀▐▄█▄█▌▄░▀▒▒░░░░░░░░░░▒▒▒▐░
-▐▒▒▐▀▐▀▒░▄▄▒▄▒▒▒▒▒▒░▒░▒░▒▒▒▒▌
-▐▒▒▒▀▀▄▄▒▒▒▄▒▒▒▒▒▒▒▒░▒░▒░▒▒▐░
-░▌▒▒▒▒▒▒▀▀▀▒▒▒▒▒▒░▒░▒░▒░▒▒▒▌░
-░▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▒▄▒▒▐░░
-░░▀▄▒▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▄▒▒▒▒▌░░
-░░░░▀▄▒▒▒▒▒▒▒▒▒▒▄▄▄▀▒▒▒▒▄▀░░░
-░░░░░░▀▄▄▄▄▄▄▀▀▀▒▒▒▒▒▄▄▀░░░░░
-░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▀▀░░░░░░░░
-
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+<html>
+	<head>
+    {% include head.html %}
+
+
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+            <h1>{{site.title}}</h1>
+						<h2>Connecting Chemistry, Physics, and Computer Science.</h2>
+            <p>Ph.D. candidate in Chemical Physics in <a href="https://www.colorado.edu/lab/sharmagroup/">Sandeep Sharma's group</a> at the <a href="https://www.colorado.edu/">University of Colorado, Boulder</a>.</p>
+						<!-- <p>Massively is an HTML5 website theme designed by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a><br />
+						and released for free under the <a href="https://html5up.net/license">Creative Commons license</a>. Jekyll integration by <a href="https://somiibo.com">Somiibo</a></p> -->
+						<ul class="actions">
+							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+
+            {% include nav.html %}
+            {% include sm_links.html %}
+
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<h2><a href="#">Massively is a versatile Jekyll theme</a></h2>
+									<p>With only a few edits, you can have a stunningly beautiful website <br />
+                    nearly out of the box. Of course... you can always take it further <br />
+                    and make it something even more amazing!</p>
+								</header>
+								<a href="#" class="image main"><img src="{{ "/images/IMG_3551.jpg" | absolute_url }}" alt="" /></a>
+                <p>Regardless of your website's function, the homepage is what brings the user in.
+                  If it's anything short of intriguing, captivating, or just plain cool, you're out of luck and you might deter some visitors.</p>
+                <p>Your homepage must clearly describe what your site is about.
+									Having engaging content will in this manner enable you to offer and it will make your customers more inclined to purchase from you. Content is a way to position your organization in the correct place for your clients to discover you.
+								</p>
+								<p>
+									In this manner, content in itself is a standout amongst the best promoting apparatuses in your whole advertising toolbox! Rather than making your content around your promoting technique, it's limitlessly more productive to fabricate your showcasing around your content.
+								 </p>
+
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+                {% for post in site.posts limit:3 %}
+                {% assign mod3 = forloop.index | modulo: 3 %}
+  								<article>
+  									<header>
+  										<span class="date">{{ post.date | date_to_string }}</span>
+  										<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</h2>
+  									</header>
+  									<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+  									<p>{{ post.excerpt }}</p>
+  									<ul class="actions">
+  										<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
+  									</ul>
+  								</article>
+                  {% if mod3 == 0 %}
+                  <article>
+  									<header>
+  										<h2><a href="#">Sponsored</h2>
+  									</header>
+
+  								</article>
+                  {% endif %}
+                {% endfor %}
+
+							</section>
+
+						<!-- Footer -->
+							<footer>
+                <ul class="actions">
+                  <li><a href="{{ "/blog/" | absolute_url }}" class="button">My Blog</a></li>
+                </ul>
+							</footer>
+
+					</div>
+
+				<!-- Footer -->
+        {% include foot.html %}
+
+			</div>
+
+		<!-- Scripts -->
+		{% include scripts-main.html %}
+    {% include tracking.html %}
+
+	</body>
+</html>

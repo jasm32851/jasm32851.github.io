@@ -1,26 +1,69 @@
-# Site settings
-title: James E T Smith
-email: james.e.smith@colorado.edu
-email2: james.smith9113@gmail.com
-description: > # this means to ignore newlines until "baseurl:
-  Connecting chemistry, physics, and computer science.
+# Site
+title:              James E. T. Smith
+bio:                'BIO'
+description:        "DESCRIPTION"
+locale:             en_US
 baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://jamesetsmith.github.io"  # the base hostname & protocol for your site
 
-url: "http://jamesetsmith.github.io" # the base hostname & protocol for your site
-github_username:  jamesETsmith
-# twitter_username: blalalal
-bitbucket_username: James_E_T_Smith
-linkedin_username: james-smith-8525792b
-researchgate_username: James_Smith158
-orcid_username: 0000-0002-5130-8633
-gscholar_username: James_E_T_Smith
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: "/blog/:title/"
+    layout: post
+    author:
 
-
-
-
-# Build settings
-sass:
-  sass_dir: _sass
-include: ['_pages']
+# Jekyll
+permalink:          /blog/:title/
+markdown:           kramdown
+highlighter:        rouge
 kramdown:
-  input: GFM
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+mathjax:            true
+sass:
+  sass_dir:         _sass
+  style:            compressed
+
+# Comments
+disqus_shortname:   default
+
+# Social
+analytics-id:       "default"
+# twitter:            default
+# facebook:           default
+# instagram:          default
+# github:             default
+github:  jamesETsmith
+bitbucket: James_E_T_Smith
+linkedin: james-smith-8525792b
+researchgate: James_Smith158
+orcid: 0000-0002-5130-8633
+gscholar: James_E_T_Smith
+
+# personal
+location:           Boulder, CO
+phone:              508-596-7110
+email:              james.e.smith@colorado.edu
+
+# Gems
+gems:
+  - jekyll-mentions
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+jekyll-mentions:
+    base_url: https://github.com
+
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old]
