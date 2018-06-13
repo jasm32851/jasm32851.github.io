@@ -54,27 +54,24 @@ sitemap:
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<h2><a href="#">Massively is a versatile Jekyll theme</a></h2>
-									<p>With only a few edits, you can have a stunningly beautiful website <br />
+									<h2><a href="#">Computer Science Meets Life Science</a></h2>
+									<!-- <p>With only a few edits, you can have a stunningly beautiful website <br />
                     nearly out of the box. Of course... you can always take it further <br />
-                    and make it something even more amazing!</p>
+                    and make it something even more amazing!</p> -->
 								</header>
-								<a href="#" class="image main"><img src="{{ "/images/IMG_3551.jpg" | absolute_url }}" alt="" /></a>
-                <p>Regardless of your website's function, the homepage is what brings the user in.
-                  If it's anything short of intriguing, captivating, or just plain cool, you're out of luck and you might deter some visitors.</p>
-                <p>Your homepage must clearly describe what your site is about.
-									Having engaging content will in this manner enable you to offer and it will make your customers more inclined to purchase from you. Content is a way to position your organization in the correct place for your clients to discover you.
-								</p>
-								<p>
-									In this manner, content in itself is a standout amongst the best promoting apparatuses in your whole advertising toolbox! Rather than making your content around your promoting technique, it's limitlessly more productive to fabricate your showcasing around your content.
-								 </p>
+
+								<!-- <a href="#" class="image main"><img src="{{ "/images/IMG_3551.jpg" | absolute_url }}" alt="" /></a> -->
+								<!-- <a href="#" class="image main" ><img src="{{ "/images/Copper.jpg" | absolute_url }}" alt="" /></a> -->
+                <p>I'm a Ph.D. candidate in Chemical Physics at the University of Colorado, Boulder. My research focuses on developing and implementing new quantum mechanical methods to calculate the properties of molecules and materials. I'm particularly interested in efficient parallel algorithms that can utilize the power of high performance computing (HPC) resources to tackle pressing problems in the scientific community and packaging in them in software that is easy and straightforward to use.</p>
+                <p>If you would like to know more about my research you can check out the <a href="{{ "/Code/" | absolute_url }}">Code</a>, <a href="{{ "/Publications/" | absolute_url }}">Publications</a>, or <a href="{{ "/Talks/" | absolute_url }}">Talks</a> pages. If you are interested in collaborating or you have a cool idea you think I'd be interested in shoot me an email or connect with me using one of the links at the bottom of the page.</p>
+
 
 							</article>
 
 						<!-- Posts -->
 							<section class="posts">
-                {% for post in site.posts limit:3 %}
-                {% assign mod3 = forloop.index | modulo: 3 %}
+                {% for post in site.posts limit:4 %}
+                {% assign mod4 = forloop.index | modulo: 4 %}
   								<article>
   									<header>
   										<span class="date">{{ post.date | date_to_string }}</span>
@@ -86,14 +83,14 @@ sitemap:
   										<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
   									</ul>
   								</article>
-                  {% if mod3 == 0 %}
+                  <!-- {% if mod3 == 0 %}
                   <article>
   									<header>
   										<h2><a href="#">Sponsored</h2>
   									</header>
 
   								</article>
-                  {% endif %}
+                  {% endif %} -->
                 {% endfor %}
 
 							</section>
