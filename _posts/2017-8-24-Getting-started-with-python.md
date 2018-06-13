@@ -5,14 +5,17 @@ date:   2017-8-24
 categories: jekyll update
 ---
 
+The basics of downloading and using python with Anaconda.
+
+<!--  -->
+
 ## Downloading Python
 
 The easiest way to get started with Python is to use a distribution like
 [Anaconda](https://www.continuum.io/downloads). This allows you to get Python
 and all of the Python packages that we'll need for this class at once. The
 general installation instructions can be found
-[here](https://docs.continuum.io/anaconda/install/). If you are in CHEM 5581:
-**MAKE SURE YOU GET PYTHON 2.7!**
+[here](https://docs.continuum.io/anaconda/install/).
 
 ## Editing scripts
 
@@ -22,7 +25,7 @@ with one). If you want more flexibility I would suggest
 
 ## Running scripts
 
-# Mac OSx/ Linux
+### Mac OSx/ Linux
 
 To run a script:
 
@@ -30,7 +33,7 @@ To run a script:
 python ~/Desktop/my_python_script.py
 ```
 
-# Windows:
+### Windows:
 
 To run a script
 

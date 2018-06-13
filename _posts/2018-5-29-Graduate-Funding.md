@@ -7,9 +7,11 @@ categories: jekyll update
 
 Over the years, I've spent a lot of time looking for ways to find funding and it's been a difficult because there are a lot of lists, but none of them seem complete (this one isn't either). But I think that this list is a good start for students studying theoretical chemistry or physics. If you know any ones that I missed, let me know!
 
-# Graduate Fellowships
+<!--  -->
 
-## US Citizens Only
+## Graduate Fellowships
+
+### US Citizens Only
 
 -   [DOE Computational Science](https://www.krellinst.org/csgf/)
 -   [National Defense Science and Engineering (NDSEG)](http://ndseg.asee.org/)
@@ -26,7 +28,7 @@ Over the years, I've spent a lot of time looking for ways to find funding and it
 
 -   [CalTech's Site for Graduate Funding Opportunities](https://www.gradoffice.caltech.edu/financialsupport/ExternalSE)
 
-## No Citizenship Requirements
+### No Citizenship Requirements
 
 -   [ANL Graduate Internships](http://www.anl.gov/education/graduates)
 -   [LANL Graduate Internship](https://lanl.jobs/los-alamos-nm/graduate-internship-program/7C33B7B5F2EF45F8B150098D68A3AAD5/job/)
