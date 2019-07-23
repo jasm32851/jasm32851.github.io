@@ -13,11 +13,12 @@ Do you want to leverage the power of VSCode to edit files on a remote server? Me
 
 
 # Prerequisites/Set-up
-1. Since you're reading this, I'll assume you've already downloaded [VSCode](https://code.visualstudio.com/Download).
+* Since you're reading this, I'll assume you've already downloaded [VSCode](https://code.visualstudio.com/Download).
 
-2. Next up you should get the [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) extension which allows us to work on remote servers through an SSH connection. It has the capability to connect to servers in other ways, but I'll only discuss connecting through SSH.
+* Next up you should get the [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) extension which allows us to work on remote servers through an SSH connection. It has the capability to connect to servers in other ways, but I'll only discuss connecting through SSH.
 
-3. If you are working on a Linux machine you may also need to install an OpenSSH client.
+* If you are working on a Linux machine you may also need to install an OpenSSH client.
+   
 ```bash
 sudo apt-get install openssh-client
 ```
@@ -26,7 +27,7 @@ sudo apt-get install openssh-client
 
 First we need to check and make sure we have an SSH key on our local machine. Keys facilitate authentication and are required when using VSCode to edit files on a remote host.
 
-Check to see if you have a file that looks like this `~/ssh/id_rsa.pub`. If not, you can create one using the following command:
+Check to see if you have a file that looks like this `~/.ssh/id_rsa.pub`. If not, you can create one using the following command:
 
 ```bash
 ssh-keygen -t rsa -b 4096
@@ -36,6 +37,7 @@ Once we have a key, we can add it to our remote host:
 
 ```bash
 ssh-copy-id jsmith@gateway.flatironinstitute.org
+ssh-copy-id -p XXXX jsmith@gateway.flatironinstitute.org
 ```
 
 You will probably need to enter your credentials here unless you've tinkered with your `~/.ssh/config` file and added some of the features shown below.
@@ -49,7 +51,7 @@ With the key in place, we can add some shortcuts to our `~/.ssh/config` file to 
 ```
  Host flatiron
    Hostname gateway.flatironinstitute.org # change this
-   Port 61022
+   Port XXXX
    User jsmith  # change this to your cluster username
    ForwardX11 yes
    ForwardX11Trusted yes          # if you trust us (like -Y)
