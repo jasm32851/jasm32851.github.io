@@ -36,9 +36,11 @@ ssh-keygen -t rsa -b 4096
 Once we have a key, we can add it to our remote host:
 
 ```bash
-ssh-copy-id jsmith@gateway.flatironinstitute.org
-ssh-copy-id -p XXXX jsmith@gateway.flatironinstitute.org
+ssh-copy-id username@remotehost.org
+ssh-copy-id -p XXXX username@remotehost.org
 ```
+
+where `-p XXXX` is replaced by the appropriate port for your server. If you're working on Flatiron the Scientific Computing Core will tell you the appropriate port number. If the administrators of your server haven't mentioned this, chances are you don't need to specify it and can omit it.
 
 You will probably need to enter your credentials here unless you've tinkered with your `~/.ssh/config` file and added some of the features shown below.
 
@@ -50,24 +52,23 @@ With the key in place, we can add some shortcuts to our `~/.ssh/config` file to 
 
 ```
  Host flatiron
-   Hostname gateway.flatironinstitute.org # change this
-   Port XXXX
-   User jsmith  # change this to your cluster username
+   Hostname remotehost.org  # change this
+   Port XXXX                # change this as instructed by Flatiron or the administrators of your server
+   User jsmith              # change this to your cluster username
    ForwardX11 yes
    ForwardX11Trusted yes          # if you trust us (like -Y)
    DynamicForward 127.0.0.1:61080 # if you want to use Public:Playbooks/ssh_as_a_socks_proxy
    ControlPath ~/.ssh/.%r@%h:%p
    ControlMaster auto             # allows you to connect from other windows without re-authenticating
 ```
- 
-With this in my `~/.ssh/config`, if I'm logged onto my remote host in one shell, I can connect to the Gateway server without entering my password using the command `ssh flatiron`.
-
- # Running on a Remote Host
-
 **Note**
 >If you aren't logged on to the remote server you want to connect to, do so now in a terminal window.
 
-Now we can open up VSCode and use the `F1` key or `Crtl+Shift+p` to open the command palette. Type `Remote-SSH: Connect to Host` and VSCode will prompt us to enter something like `username@remotehost.com`. Luckily for us, since we set up those shortcuts earlier, we can just type `flatiron` (or whatever you chose to name your Host in `~/.ssh/config`) and after a few seconds we should be connected. 
+With our modified `~/.ssh/config`, if we're logged onto our remote host in one shell, we can connect to the Gateway server without entering our password using the command `ssh flatiron`.
+
+ # Running on a Remote Host
+
+Now we can open up VSCode and use the `F1` key or `Crtl+Shift+p` (`Cmd+Shift+p` on OSX) to open the command palette. Type `Remote-SSH: Connect to Host` and VSCode will prompt us to enter something like `username@remotehost.com`. Luckily for us, since we set up those shortcuts earlier, we can just type `flatiron` (or whatever you chose to name your Host in `~/.ssh/config`) and after a few seconds we should be connected. 
 
 **Note**
 >The VSCode server on your remote host won't see the extensions you've installed locally so you will need to install them again on the remote host.
