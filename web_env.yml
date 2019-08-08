@@ -1,0 +1,6 @@
+name: web_env
+dependencies:
+  - python=3.6
+  - ruby
+  - gcc_linux-64
+  - gxx_linux-64 

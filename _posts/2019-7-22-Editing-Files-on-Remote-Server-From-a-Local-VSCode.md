@@ -12,7 +12,8 @@ Do you want to leverage the power of VSCode to edit files on a remote server? Me
 > If you find that you need more information, I'd suggest visiting the original documentation [here](https://code.visualstudio.com/docs/remote/remote-overview).
 
 
-# Prerequisites/Set-up
+## Prerequisites/Set-up
+
 * Since you're reading this, I'll assume you've already downloaded [VSCode](https://code.visualstudio.com/Download).
 
 * Next up you should get the [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) extension which allows us to work on remote servers through an SSH connection. It has the capability to connect to servers in other ways, but I'll only discuss connecting through SSH.
@@ -23,7 +24,7 @@ Do you want to leverage the power of VSCode to edit files on a remote server? Me
 sudo apt-get install openssh-client
 ```
 
-# Configuring Key Based Authentication
+## Configuring Key Based Authentication
 
 First we need to check and make sure we have an SSH key on our local machine. Keys facilitate authentication and are required when using VSCode to edit files on a remote host.
 
@@ -37,6 +38,11 @@ Once we have a key, we can add it to our remote host:
 
 ```bash
 ssh-copy-id username@remotehost.org
+```
+
+Or if your server requires that you specify the port
+
+```bash
 ssh-copy-id -p XXXX username@remotehost.org
 ```
 
@@ -66,7 +72,7 @@ With the key in place, we can add some shortcuts to our `~/.ssh/config` file to 
 
 With our modified `~/.ssh/config`, if we're logged onto our remote host in one shell, we can connect to the Gateway server without entering our password using the command `ssh flatiron`.
 
- # Running on a Remote Host
+## Running on a Remote Host
 
 Now we can open up VSCode and use the `F1` key or `Crtl+Shift+p` (`Cmd+Shift+p` on OSX) to open the command palette. Type `Remote-SSH: Connect to Host` and VSCode will prompt us to enter something like `username@remotehost.com`. Luckily for us, since we set up those shortcuts earlier, we can just type `flatiron` (or whatever you chose to name your Host in `~/.ssh/config`) and after a few seconds we should be connected. 
 
