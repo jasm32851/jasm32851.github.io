@@ -1,45 +1,45 @@
 # Site
-title:              James E. T. Smith
-bio:                'BIO'
-description:        "DESCRIPTION"
-locale:             en_US
+title: James E. T. Smith
+bio: "BIO"
+description: "DESCRIPTION"
+locale: en_US
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jamesetsmith.github.io"  # the base hostname & protocol for your site
+url: "https://jamesetsmith.github.io" # the base hostname & protocol for your site
 
 defaults:
-- scope:
-    path: ''
-    type: posts
-  values:
-    permalink: "/blog/:title/"
-    layout: post
-    author:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      permalink: "/blog/:title/"
+      layout: post
+      author:
 
 # Jekyll
-permalink:          /blog/:title/
-markdown:           kramdown
-highlighter:        rouge
+permalink: /blog/:title/
+markdown: kramdown
+highlighter: rouge
 kramdown:
-  auto_ids:         true
-  footnote_nr:      1
-  entity_output:    as_char
-  toc_levels:       1..6
-  enable_coderay:   false
-mathjax:            true
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+mathjax: true
 sass:
-  sass_dir:         _sass
-  style:            compressed
+  sass_dir: _sass
+  style: compressed
 
 # Comments
-disqus_shortname:   default
+# disqus_shortname:   default
 
 # Social
-analytics-id:       "default"
+analytics-id: "default"
 # twitter:            default
 # facebook:           default
 # instagram:          default
 # github:             default
-github:  jamesETsmith
+github: jamesETsmith
 bitbucket: James_E_T_Smith
 linkedin: james-smith-8525792b
 researchgate: James_Smith158
@@ -47,9 +47,9 @@ orcid: 0000-0002-5130-8633
 gscholar: James_E_T_Smith
 
 # personal
-location:           Boulder, CO
-phone:              508-596-7110
-email:              james.e.smith@colorado.edu
+location: Boulder, CO
+phone: 508-596-7110
+email: james.e.smith@colorado.edu
 
 # Gems
 # plugins:
@@ -59,7 +59,22 @@ email:              james.e.smith@colorado.edu
 # paginate_path: "/blog/page:num/"
 
 # jekyll-mentions:
-    # base_url: https://github.com
+# base_url: https://github.com
 
 # Exclude list
-exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old]
+exclude:
+  [
+    README.md,
+    Gemfile,
+    Gemfile.lock,
+    node_modules,
+    gulpfile.js,
+    package.json,
+    _site,
+    src,
+    vendor,
+    CNAME,
+    LICENSE,
+    Rakefile,
+    old,
+  ]
