@@ -52,17 +52,13 @@ phone:              508-596-7110
 email:              james.e.smith@colorado.edu
 
 # Gems
-gems:
-  - jekyll-mentions
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
+# plugins:
+#   - github-pages
 
-paginate: 6
-paginate_path: "/blog/page:num/"
+# paginate: 6
+# paginate_path: "/blog/page:num/"
 
-jekyll-mentions:
+# jekyll-mentions:
     # base_url: https://github.com
 
 # Exclude list

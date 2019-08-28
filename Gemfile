@@ -1,8 +1,4 @@
-source "https://rubygems.org"
-
-gem "jekyll", "~> 3.2.1"
-gem "jekyll-sitemap"
-gem "jekyll-gist"
-gem 'jekyll-mentions'
-gem 'jekyll-feed'
-gem 'jekyll-paginate'
+source 'https://rubygems.org' do
+  # gem "nokogiri", github: "sparklemotion/nokogiri", branch: "libxml2-2.9.1"
+  gem 'github-pages', group: :jekyll_plugins
+end

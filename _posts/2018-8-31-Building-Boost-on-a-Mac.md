@@ -20,10 +20,10 @@ I hope the guide below helps you avoid some of the mistakes I've made and if you
 
 ### Apple LLVM without MPI
 ```bash
-$ cd ~/apps/boost_1_67_0
-$ ./bootstrap.sh --prefix=/Users/jets/apps/boost_1_67_0/stage
+cd ~/apps/boost_1_67_0
+./bootstrap.sh --prefix=/Users/jets/apps/boost_1_67_0/stage
 ...
-$ ./b2 -j4
+./b2 -j4
 ```
 
 The prefix flags (as `./bootstrap.sh --help` will tell you) specifies the path where the compiled Boost libraries will.
@@ -68,6 +68,8 @@ After we've done this, we can go back to the directory with our test, recompile,
 ```
 
 Everything looks good!
+
+If things still don't work you may need to use `install_name_tool` on you Boost shared libraries to make sure the linking paths are correct.
 
 ### Apple LLVM with MPI
 
